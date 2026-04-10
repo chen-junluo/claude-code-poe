@@ -1,0 +1,8 @@
+{
+  "api_key": "",
+  "base_url": "https://api.poe.com/v1",
+  "default_text_model": "Claude-Sonnet-4.6",
+  "default_search_model": "GPT-5.4",
+  "default_image_model": "GPT-Image-1.5",
+  "image_download_dir": ""
+}

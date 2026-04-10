@@ -2,51 +2,73 @@
 
 [中文说明](README-zh.md)
 
-A Claude Code skill that routes Poe-related tasks through the Poe API.
+> Let your Claude Code use Poe to browse the web for fresh information and use text-to-image models.
 
-## What this skill does
+A Claude Code skill for people who want Poe to handle web-backed lookups and image generation inside Claude Code.
 
-- Uses Poe for text and chat requests when the user asks for Poe
-- Uses Poe Responses API with `web_search_preview` for search and current-information tasks
-- Guides local JSON config setup when Poe config is missing
-- Supports Poe image generation with local download handling
+## What this does
 
-## Included files
+- Routes search and current-information tasks through Poe Responses API with `web_search_preview`
+- Routes ordinary Poe chat tasks through Poe chat completions
+- Uses the repo's `config.json` at runtime
+- Asks the user to fill `api_key` and `image_download_dir` before requests that need them
+- Downloads generated images to the exact directory configured in `config.json`
 
-- `skill.md`: the skill definition and operating instructions
-- `README.md`: English overview
-- `README-zh.md`: Chinese overview
-- `LICENSE`: open-source license
-- `.gitignore`: local ignore rules
+## Use it for
 
-## Important security note
-
-This repository does not include local Poe config files or API keys.
-Store your real Poe credentials in a private local JSON file outside the repository.
-
-## Local config location used by the skill
-
-The skill expects a private local config at:
-
-- `/Users/dylanchen/.claude/poe/config.json`
-
-Minimum shape:
-
-```json
-{
-  "api_key": "your_poe_api_key"
-}
-```
+- "Use Poe to look this up"
+- "Find the latest Claude Code docs"
+- "Search today's AI news with Poe"
+- "Generate an image with Poe"
+- "Help me set up Poe config"
 
 ## Quick start
 
-1. Copy this skill into your Claude Code skills directory.
-2. Create your private Poe config JSON outside the repository.
-3. Make sure the config contains a non-empty `api_key`.
-4. Use Claude Code with Poe-related requests.
+1. Put this skill in your Claude Code skills directory.
+2. Open `config.json` in this folder.
+3. Fill in `api_key`.
+4. Fill in `image_download_dir` if you want image downloads.
+5. Start using Poe-related prompts in Claude Code.
 
-## Notes
+## What it asks from you
 
-- Do not commit secrets.
-- Do not put Poe config into a tracked project.
-- For web-backed tasks, this skill prefers Poe search over Claude Code web search.
+Before the first request, this skill expects you to edit `config.json`.
+
+Fields that already have defaults:
+- `base_url`
+- `default_text_model`
+- `default_search_model`
+- `default_image_model`
+
+Fields you need to fill:
+- `api_key`
+- `image_download_dir`
+
+The skill should read this repo's `config.json` before every Poe request and use exactly the `api_key` stored there.
+
+## What it produces
+
+Depending on the task, this skill returns:
+- a Poe search answer with citations when Poe provides them
+- a Poe text response with the model used
+- generated image files saved to the configured local directory
+
+## Limits
+
+- It does not use Claude Code `WebSearch` for current-information tasks.
+- It stops if `config.json` is missing or `api_key` is empty.
+- It stops image download tasks if `image_download_dir` is empty.
+- It should not be used to store real secrets anywhere except the local `config.json` that the user edits.
+
+## File map
+
+- `skill.md`: skill rules and execution flow
+- `config.json`: runtime config template
+- `README.md`: English README
+- `README-zh.md`: Chinese README
+
+## Design choices
+
+- Poe search is the default path for current information.
+- Repo-local `config.json` is the only config source for runtime requests.
+- The skill asks for missing setup instead of silently falling back.
