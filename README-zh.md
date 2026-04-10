@@ -30,6 +30,9 @@
 4. 如果你要下载图片，再填上 `image_download_dir`。
 5. 然后就可以在 Claude Code 里直接提 Poe 相关请求。
 
+- 本地访问权限：你的本地环境得能正常访问 Poe。要是本地挂了 VPN 才能通，那就先挂好再用。
+- 常见排查：如果还是用不起来，通常就是 `api_key` 没配对，或者保存 API Key 的配置文件路径、输出目录路径配错了。
+
 ## 它会问你啥 (What it asks from you)
 
 第一次用之前，这个 skill 会要求你先改 `config.json`。

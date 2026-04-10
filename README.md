@@ -30,6 +30,9 @@ A Claude Code skill for people who want Poe to handle web-backed lookups and ima
 4. Fill in `image_download_dir` if you want image downloads.
 5. Start using Poe-related prompts in Claude Code.
 
+- Local access: your local environment must be able to reach Poe. If needed, connect through a VPN first.
+- Troubleshooting: if Poe still does not work, the usual causes are a missing or incorrect `api_key`, or path issues around the config file or output directory.
+
 ## What it asks from you
 
 Before the first request, this skill expects you to edit `config.json`.
