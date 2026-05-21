@@ -1,10 +1,31 @@
+<a id="top"></a>
+
+<div align="center">
+
+<img src="assets/poe-readme-banner.png" alt="Poe - 给 Claude Code 用的 Poe 搜索与文生图 skill" width="980" />
+
 # Poe
 
-[English README](README.md)
+**让 Claude Code 直接接上 Poe：查网页、拿最新信息、顺手文生图**
 
-> 让你的 Claude Code 可以利用 Poe 来浏览网页获取最新的信息+使用文生图模型。
+`Poe` 是一个 Claude Code skill，适合想在 Claude Code 里把在线搜索、current-information 查询、文生图请求都收进同一套 repo-local 配置的人。
 
-这是一个 Claude Code skill，适合想在 Claude Code 里直接用 Poe 搜网页、拿最新信息、跑文生图的人。
+<p>
+  <img src="https://img.shields.io/badge/status-active%20development-2ea44f?style=for-the-badge" alt="Project Status">
+  <img src="https://img.shields.io/badge/host-Claude%20Code-7C3AED?style=for-the-badge" alt="Host">
+  <img src="https://img.shields.io/badge/search-Poe%20Responses%20API-2563EB?style=for-the-badge" alt="Search Backend">
+  <img src="https://img.shields.io/badge/images-Poe%20media%20models-F59E0B?style=for-the-badge" alt="Image Support">
+</p>
+
+<p>
+  <a href="README.md"><b>English README</b></a> ·
+  <a href="#这玩意是干啥的-what-this-does"><b>这玩意是干啥的</b></a> ·
+  <a href="#能拿它干啥-use-cases"><b>能拿它干啥</b></a> ·
+  <a href="#咋整先跑起来-quick-start"><b>咋整，先跑起来</b></a> ·
+  <a href="#别指望它干这些-limits"><b>别指望它干这些</b></a>
+</p>
+
+</div>
 
 ## 这玩意是干啥的 (What this does)
 

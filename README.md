@@ -1,10 +1,31 @@
+<a id="top"></a>
+
+<div align="center">
+
+<img src="assets/poe-readme-banner.png" alt="Poe - Claude Code skill for Poe search and image generation" width="980" />
+
 # Poe
 
-[中文说明](README-zh.md)
+**Use Poe inside Claude Code for web search, fresh information, and image generation**
 
-> Let your Claude Code use Poe to browse the web for fresh information and use text-to-image models.
+`Poe` is a Claude Code skill for people who want Poe to handle search-backed lookups, current-information tasks, and text-to-image requests from one repo-local setup.
 
-A Claude Code skill for people who want Poe to handle web-backed lookups and image generation inside Claude Code.
+<p>
+  <img src="https://img.shields.io/badge/status-active%20development-2ea44f?style=for-the-badge" alt="Project Status">
+  <img src="https://img.shields.io/badge/host-Claude%20Code-7C3AED?style=for-the-badge" alt="Host">
+  <img src="https://img.shields.io/badge/search-Poe%20Responses%20API-2563EB?style=for-the-badge" alt="Search Backend">
+  <img src="https://img.shields.io/badge/images-Poe%20media%20models-F59E0B?style=for-the-badge" alt="Image Support">
+</p>
+
+<p>
+  <a href="README-zh.md"><b>中文说明</b></a> ·
+  <a href="#what-this-does"><b>What this does</b></a> ·
+  <a href="#use-it-for"><b>Use cases</b></a> ·
+  <a href="#quick-start"><b>Quick start</b></a> ·
+  <a href="#limits"><b>Limits</b></a>
+</p>
+
+</div>
 
 ## What this does
 
