@@ -4,11 +4,11 @@
 
 <img src="assets/poe-readme-banner.png" alt="Poe - Claude Code skill for Poe search and image generation" width="980" />
 
-# Poe
+# claude-code-Poe
 
 **Use Poe inside Claude Code for web search, fresh information, and image generation**
 
-`Poe` is a Claude Code skill for people who want Poe to handle search-backed lookups, current-information tasks, and text-to-image requests from one repo-local setup.
+`claude-code-Poe` is a Claude Code skill for people who want Poe to handle search-backed lookups, current-information tasks, and text-to-image requests from one repo-local setup.
 
 <p>
   <img src="https://img.shields.io/badge/status-active%20development-2ea44f?style=for-the-badge" alt="Project Status">

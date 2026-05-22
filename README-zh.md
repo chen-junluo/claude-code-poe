@@ -4,11 +4,11 @@
 
 <img src="assets/poe-readme-banner.png" alt="Poe - 给 Claude Code 用的 Poe 搜索与文生图 skill" width="980" />
 
-# Poe
+# claude-code-Poe
 
 **让 Claude Code 直接接上 Poe：查网页、拿最新信息、顺手文生图**
 
-`Poe` 是一个 Claude Code skill，适合想在 Claude Code 里把在线搜索、current-information 查询、文生图请求都收进同一套 repo-local 配置的人。
+`claude-code-Poe` 是一个 Claude Code skill，适合想在 Claude Code 里把在线搜索、current-information 查询、文生图请求都收进同一套 repo-local 配置的人。
 
 <p>
   <img src="https://img.shields.io/badge/status-active%20development-2ea44f?style=for-the-badge" alt="Project Status">
